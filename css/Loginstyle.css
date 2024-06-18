@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    background: url('/img/Usuario/background\ login.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFFFFF; 
+    border-bottom: 1px solid #2b2b2b9d;
+}
+
+header img {
+    width: 35px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav {
+    max-width: 800px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #F08F36;
+    text-decoration: underline;
+}
+
+.menu{
+    display: none;
+}
+
+#paginaAtual{
+    color: #F08F36;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 1rem;
+    font-size: 44px;
+    color: #FFFFFF;
+}
+
+.login-form input {
+    width: 100%;
+    height: 50px;
+    padding: 0.75rem;
+    margin-bottom: 1.75rem;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+::placeholder{
+    text-align: center;
+    color: #522916;
+    font-family: 'Poppins';
+}
+
+.login-form button {
+    width: 40%;
+    padding: 0.75rem;
+    background-color: #F08F36;
+    border: none;
+    border-radius: 40px;
+    color: #000000;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins';
+}
+
+.login-form button:hover {
+    background-color: #F9C89B;
+}
+
+div a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+.criarConta {
+    margin-top: 20px;
+}
+
+
+
+
+footer{
+    background-image: linear-gradient(#fbe9daea,#ffffff96, #fbe3cfc6);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: #FFFFFF;
+    flex-wrap: wrap;
+    height: 150px;
+}
+
+.imgFooter {
+    width: 65px;
+    height: 90px;
+    margin-right: 50px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.redesSociais{
+    width: 50px;
+    margin-top: 15px;
+}
+
+.faixaFooter{
+    width: 100%;
+    height: 30px;
+    background-color: #f9c89b;
+}
+
+p{
+    font-family: "Poppins";
+    color: #522916;
+}
+
+
+  @media (max-width: 768px){
+           
+    .navbar {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+          
+    }
+      
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: var(--cor-terciária);
+    }
+      
+    .nav-list.active {
+        display: flex;
+    }
+      
+    .nav-list ul {
+        flex-direction: column; 
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+      
+    .nav-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+      
+        .menu {
+          display: flex;
+          justify-content: right;
+          font-size: 40px;
+        }}

@@ -1,0 +1,438 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap);
+
+/*variavéis mutaveis para cores facilitando na modificação*/
+:root{
+   /*Cores Backgrounds*/
+    --cor-primaria: #F9C89B;
+    --cor-secundaria: #F08F36;
+    --cor-terciária:#FFFFFF;
+    --cor-faixafooter: #f9c89ba4;
+
+    /*Cores textos*/
+    --cor-textoPrimaria: #522916;
+    --cor-textoSecundaria: #000000;
+    --cor-textoAlternativo: #FFFFFF;
+
+    --fonte-principal: "Poppins";
+}
+
+/*retirando as margens e paddings de todo o site*/
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*corpo do site*/
+body{
+    background-color: var(--cor-terciária);
+    font-family: var(--fonte-principal);
+    margin: auto;
+    width: 100%;
+}
+
+/*alinhamento do cabeçalho*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--cor-terciária);
+    border-bottom: 1px solid #2b2b2b9d;
+}
+
+/*tamanho fixo do logo no cabeeçalho*/
+header img{
+    width: 80px;
+}
+
+/*tamanho máximo da parte dos textos cabeçalho*/
+nav{
+    max-width: 800px;
+}
+
+/*alinhamento dos textos do cabeçalho*/
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*espaço entre os textos do cabeçalho*/
+nav ul li{
+    margin-left: 20px;
+}
+/*textos do cabeçalho*/
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-textoSecundaria);
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+/*mudar a cor dos elemntos do cabeçalho ao passar o mouse por cima*/
+nav ul li a:hover {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+
+#paginaAtual{
+    color: var(--cor-secundaria);
+}
+
+/*oculta o menu mobile para aparecer apenas quando diminuir a largura da tela*/
+.menu{
+    display: none;
+}
+
+/*Imagem de fundo do banner preenchendo a div*/
+section{
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    background-image: url(/img/Conteudo/capa-materiasCarita\(3\).JPG); 
+    background-size: cover;
+    background-position: center;
+}
+
+/*Alinhamento da sombra e do texto do Banner*/
+.materiasCarita{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.315); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-textoAlternativo);
+    font-size: 32px;
+    text-align: center;
+    padding: 0 20px;
+    text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.315);
+    font-weight: bold;
+}
+
+/*Espaçamento entre as matérias e o banner */
+article{
+    padding-top: 20px;
+}
+
+/*Background e alinhamento de cada matéria*/
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cor-terciária);
+    overflow: hidden;
+    align-items: flex-start;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+/*alinhamento da div da imagem responsivo */
+.imgConteudo{
+    flex: 0.6;
+}
+/*Imagem da matéria */
+.imgConteudo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*alinhamento dos textos da matéria */
+.conteudoCarita{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 40px;
+    
+}
+/*títulos das matérias */
+.conteudoCarita h2{
+    font-size: 22px;
+    margin-bottom: 16px;
+    color: var(--cor-textoPrimaria);
+}
+/*Paragrafos das matérias */
+.conteudoCarita p{
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: var(--cor-textoPrimaria);
+}
+/*Butão dos arquivos de conteúdo  */
+.conteudoCarita button{
+    padding: 10px 20px;
+    border-radius: 16px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-textoPrimaria);
+    font-weight: bold;
+}
+/*Ao passar o mouse no botão, alterar css*/
+.conteudoCarita button:hover{
+    text-decoration: underline;
+    background-color: #e97408;
+}
+/*Background e alinhamento Resultados Caritá */
+.resultadosCarita{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-textoAlternativo);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.151);
+    width: 100%;
+}
+/*título Resultados Caritá */
+.resultadosCarita h2{
+    font-size: 24px;
+    font-weight: bold;   
+}
+/*tamanho fixo na imagem do resultado */
+.resultadosCarita img{
+    width: 100px;
+}
+
+/*Alinhar textos do resultado Caritá */
+.conteudoResultados{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+ /*Background do rodapé */
+footer{
+    background-image: radial-gradient(circle, #fbe9daea,#ffffff96, #fbe3cfc6);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--cor-terciária);
+    flex-wrap: wrap;
+    
+}
+/*alinhar logo do rodapé rodapé */
+.imgFooter{
+    width: 150px;
+    
+    
+}
+/*alinhas o rodapé */
+.rodape{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+/*redes sociais do rodapé*/
+.redesSociais img{
+    width: 40px;
+    margin: 0 10px;
+}
+/*Faixa rodapé */
+.faixaFooter{
+    width: 100%;
+    height: 30px;
+    background-color: var(--cor-faixafooter);
+}
+
+/* responsividade 768 px*/
+@media (max-width: 768px){
+           
+    .navbar {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+          
+    }
+      
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: var(--cor-terciária);
+    }
+      
+    .nav-list.active {
+        display: flex;
+    }
+      
+    .nav-list ul {
+        flex-direction: column; /* Alinha os itens em uma coluna */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+      
+    .nav-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+      
+        .menu {
+          display: flex;
+          justify-content: right;
+          font-size: 40px;
+        }
+          
+        
+    .materiasCarita h1{
+        font-size: 32px;
+    }
+    .container{
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+    .conteudoCarita{
+        padding-left: 0;
+        width: 90%;
+    }
+    .conteudoCarita h2{
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .conteudoCarita p{
+        font-size: 14px;
+    }
+    .conteudoCarita button{
+        width: 100%;
+    }
+        
+}
+        
+ 
+
+/* responsividade 480px */
+@media (max-width: 480px) {
+    .navbar {
+      flex-direction: column; 
+        align-items: center;
+        width: 100%;
+        
+    }
+    
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: var(--cor-terciária);
+    }
+    
+    .nav-list.active {
+        display: flex;
+    }
+    
+    .nav-list ul {
+        flex-direction: column; /* Alinha os itens em uma coluna */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: right;
+        font-size: 40px;
+    }
+        
+    .materiasCarita h1{
+        font-size: 24px;
+    }
+    .container{
+        padding: 10px;
+        align-items: center;
+    }
+    .conteudoCarita h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    .conteudoCarita p{
+        font-size: 12px;
+    }
+    aside{
+        align-items: center;
+    }
+    .resultadosCarita h2{
+        font-size: 12px;
+    }
+    button{
+        width: 100%;
+        
+    }
+}
+
+/* responsividade 320px teste */
+
+@media (max-width: 320px) {
+    .navbar {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+        
+    }
+    
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: var(--cor-terciária);
+    }
+    
+    .nav-list.active {
+        display: flex;
+    }
+    
+    .nav-list ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: right;
+        font-size: 40px;
+    }
+        
+    .materiasCarita h1{
+        font-size: 18px;
+    }
+
+    .container{
+        padding: 8px;
+    }
+    .conteudoCarita h2{
+        font-size: 15px;
+    }
+    .conteudoCarita p{
+        font-size: 9px;
+    }
+    .resultadosCarita h2{
+        font-size: 12px;
+    }
+}

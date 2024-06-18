@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Usuário</title>
+    <link rel="stylesheet" href="/css/usuário.css">
+</head>
+<body>
+    <header>
+        <img src="/img/Usuario/logo Carita.png" alt="Logo Caritá">
+        <nav class="navbar">
+            <div class="menu" id="menu">
+              &#9776; 
+            </div>
+            <div class="nav-list" id="nav-list">
+              <ul>
+                <li class="nav-item"><a href="PaginaInicial.html">Página inicial</a></li>
+                <li class="nav-item"><a href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a href="conteudo.html">Conteúdo</a></li>
+                <li class="nav-item"><a href="como_ajudar.html">Como ajudar</a></li>
+                <li class="nav-item"><a href="formContato.html">Contato</a></li>
+                <li class="nav-item"><a id="paginaAtual" href="login.html">Login</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <div class="logo">
+                    <img src="/img/Usuario/shopping cart.png" alt="Logo" class="logo-img">
+                </div>
+                <div class="org-name">Nome Organização</div>
+                <div class="org-registered">Cadastrado desde de xx/xx/xxxx</div>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2>Dados</h2>
+            <form>
+                <div class="form-group">
+                    <label for="org-name">Nome Organização</label>
+                    <input type="text" id="org-name" name="org-name">
+                </div>
+                <div class="form-group">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" id="cnpj" name="cnpj">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" name="telefone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="chave-pix">Chave-Pix</label>
+                    <input type="text" id="chave-pix" name="chave-pix">
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço Completo</label>
+                    <input type="text" id="endereco" name="endereco">
+                </div>
+                <div class="form-redes">
+                    <label for="sites">Sites/Redes Sociais</label>
+                    <input type="text" id="sites" name="sites">
+                </div>
+                <div class="form-descr">
+                    <label for="descricao">Descrição da Instituição</label>
+                    <input id="descricao" name="descricao"></input>
+                </div>
+                <div class="alterar">
+                <button type="submit" class="btn-alterar">Enviar</button>
+                </div>
+            </form>
+            <a href="#" class="excluir-conta">Excluir conta</a>
+        </div>
+    </div>
+    <footer>
+        <img class="imgFooter" src="/img/Usuario/logo Carita.png" alt="Logo Caritá">
+        <div class="rodape">
+            <p>Nos acompanhe nas nossas redes sociais</p>  
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="redesSociais" src="/img/Usuario/facebook.png" alt="Logo do Facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="redesSociais" src="/img/Usuario/instagram.png" alt="Logo do Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="faixaFooter"></div>
+    <script src="/js/menu.js"></script> 
+</body>
+</html>

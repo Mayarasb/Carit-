@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box
+}
+#textog{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#textom{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#textop{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* CSS Cabeçalho */
+
+/*alinhamento do cabeçalho*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #2b2b2b9d;
+}
+
+/*tamanho fixo do logo no cabeeçalho*/
+header img{
+    width: 80px;
+}
+
+/*tamanho máximo da parte dos textos cabeçalho*/
+nav{
+    max-width: 800px;
+}
+
+/*alinhamento dos textos do cabeçalho*/
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*espaço entre os textos do cabeçalho*/
+nav ul li{
+    margin-left: 20px;
+}
+/*textos do cabeçalho*/
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+/*mudar a cor dos elemntos do cabeçalho ao passar o mouse por cima*/
+nav ul li a:hover {
+    color: #F08F36;
+    text-decoration: underline;
+}
+
+#paginaAtual{
+    color: #F08F36;
+}
+
+/*oculta o menu mobile para aparecer apenas quando diminuir a largura da tela*/
+.menu{
+    display: none;
+}
+
+
+
+section{
+    position: relative;
+    width: 100%;
+    height: 429px;
+    background-image: url(/img/Pagina_Inicial/A-sua-doação-pode-ajudar-famílias-carentes-na-cidade-de-Votorantim.png);
+    background-size: cover;
+    background-position: center;
+}
+.suptexto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.315);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.315);
+    font-size: 20px;
+}
+
+
+
+#botao{
+    padding: 10px 20px;
+    border-radius: 16px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #F9C89B;
+    color: #522916 ;
+    font-weight: bold;
+}
+#botao a{
+    text-decoration: none;
+    color: #522916;
+}
+
+
+.meiosup{
+    background: radial-gradient( circle, white ,#FFF2E7) ;
+    display: flex;
+    flex-direction: row;
+    color:#522916 ;
+}
+#imgmeiosup{
+    width: 409px;
+    height: 331px;
+    display: flex;
+    justify-content: flex-start;
+}
+.contmeiosup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+
+
+.imgmeio{
+    position: relative;
+    width: 100%;
+    height: 429px;
+    background-image: url(/img/Pagina_Inicial/Vegetais.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    display: flex;
+}
+.contmeio{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    width: auto;
+}
+.contmeio1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 30%;
+    margin: auto;
+    
+}
+.contmeio2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 30%;
+}
+.contmeio3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 30% ;
+}
+#imgpmeio{
+    max-width: 180px;
+    max-height: 180px;
+}
+
+
+
+.meioinf{
+    background: white ;
+    display: flex;
+    color: #522916;
+    height: 280px;
+    
+}
+.contmeioinf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    line-height: 3em;
+}
+#imgmeioinf{
+    width: 320px;
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 40px;
+    border-bottom: 35px;
+    padding-left:  20px;
+}
+
+
+
+footer{
+    background-image: radial-gradient( circle, white ,#FFF2E7);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;    
+}
+/*alinhar logo do rodapé rodapé */
+.imgFooter{
+    width: 150px;
+    
+    
+}
+/*alinhas o rodapé */
+.rodape{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+/*redes sociais do rodapé*/
+.redesSociais img{
+    width: 40px;
+    margin: 0 10px;
+}
+/*Faixa rodapé */
+.faixaFooter{
+    width: 100%;
+    height: 30px;
+    background-color: #f9c89ba4;
+}
+
+
+/* Media query responsivo */
+@media(max-width: 768px){
+/* parte do Footer */
+.navbar {
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+    
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #FFFFFF;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list ul {
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: right;
+    font-size: 40px;
+  }
+  .meiosup{
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  .imgmeiosup{
+    align-items: center;
+    margin: auto;
+  }
+  .imgmeio{
+    height: auto;
+  }
+  .contmeio{
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+  .meioinf{
+    margin: auto;
+  }
+
+}
